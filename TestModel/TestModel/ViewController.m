@@ -12,6 +12,7 @@
 #import "Person.h"
 #import "GreetingPresenter.h"
 #import "MVVMVC.h"
+#import "ROVC.h"
 
 #import "VGreetingViewVC.h"
 
@@ -56,6 +57,13 @@
     animate.name = @"测试动画";
     GreetingViewModel *viewModel = [[GreetingViewModel alloc]initWithAnimate:animate];
     vc.viewModel = viewModel;
+    [self presentViewController:vc animated:true completion:^{
+        
+    }];
+}
+- (IBAction)touchROMVVM:(id)sender
+{
+    ROVC *vc = [ROVC new];
     [self presentViewController:vc animated:true completion:^{
         
     }];

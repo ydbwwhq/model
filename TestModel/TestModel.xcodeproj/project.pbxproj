@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6D6DF5FA215A052800103098 /* ROVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D6DF5F9215A052800103098 /* ROVC.m */; };
+		6D6DF5FD215A06A700103098 /* ROModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D6DF5FC215A06A700103098 /* ROModel.m */; };
+		6D6DF600215A070200103098 /* ROVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D6DF5FF215A070200103098 /* ROVM.m */; };
+		6D6DF603215A071E00103098 /* RORequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D6DF602215A071E00103098 /* RORequestManager.m */; };
 		C927F7F020AD63FE001F5D24 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C927F7EF20AD63FE001F5D24 /* AppDelegate.m */; };
 		C927F7F320AD63FE001F5D24 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C927F7F220AD63FE001F5D24 /* ViewController.m */; };
 		C927F7F620AD63FE001F5D24 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C927F7F420AD63FE001F5D24 /* Main.storyboard */; };
@@ -27,9 +31,21 @@
 		C9F0ADDE20AE75E7004ADD81 /* Animate.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F0ADDD20AE75E7004ADD81 /* Animate.m */; };
 		C9F0ADE120AE7776004ADD81 /* GreetingViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F0ADE020AE7776004ADD81 /* GreetingViewModel.m */; };
 		C9F0ADE420AEAA65004ADD81 /* MVVMVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F0ADE320AEAA65004ADD81 /* MVVMVC.m */; };
+		CF0B419E7A6D60EEC788D6A8 /* libPods-TestModel.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 44B077E2AD8E4835A42ADD25 /* libPods-TestModel.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		44B077E2AD8E4835A42ADD25 /* libPods-TestModel.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TestModel.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5972FF089305AEB9DB9AE4AA /* Pods-TestModel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestModel.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestModel/Pods-TestModel.release.xcconfig"; sourceTree = "<group>"; };
+		6D6DF5F8215A052800103098 /* ROVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ROVC.h; sourceTree = "<group>"; };
+		6D6DF5F9215A052800103098 /* ROVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ROVC.m; sourceTree = "<group>"; };
+		6D6DF5FB215A06A700103098 /* ROModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ROModel.h; sourceTree = "<group>"; };
+		6D6DF5FC215A06A700103098 /* ROModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ROModel.m; sourceTree = "<group>"; };
+		6D6DF5FE215A070200103098 /* ROVM.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ROVM.h; sourceTree = "<group>"; };
+		6D6DF5FF215A070200103098 /* ROVM.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ROVM.m; sourceTree = "<group>"; };
+		6D6DF601215A071E00103098 /* RORequestManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RORequestManager.h; sourceTree = "<group>"; };
+		6D6DF602215A071E00103098 /* RORequestManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RORequestManager.m; sourceTree = "<group>"; };
+		C802BE9BA67F665DB3932355 /* Pods-TestModel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestModel.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestModel/Pods-TestModel.debug.xcconfig"; sourceTree = "<group>"; };
 		C927F7EB20AD63FE001F5D24 /* TestModel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestModel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C927F7EE20AD63FE001F5D24 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C927F7EF20AD63FE001F5D24 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -77,17 +93,76 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF0B419E7A6D60EEC788D6A8 /* libPods-TestModel.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		68709B597475BC8BAA04D509 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				44B077E2AD8E4835A42ADD25 /* libPods-TestModel.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6D6DF5F4215A03C800103098 /* ReactiveObjCMVVM */ = {
+			isa = PBXGroup;
+			children = (
+				6D6DF5F7215A041E00103098 /* vm */,
+				6D6DF5F6215A040200103098 /* view */,
+				6D6DF5F5215A03D800103098 /* model */,
+			);
+			path = ReactiveObjCMVVM;
+			sourceTree = "<group>";
+		};
+		6D6DF5F5215A03D800103098 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				6D6DF5FB215A06A700103098 /* ROModel.h */,
+				6D6DF5FC215A06A700103098 /* ROModel.m */,
+				6D6DF601215A071E00103098 /* RORequestManager.h */,
+				6D6DF602215A071E00103098 /* RORequestManager.m */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		6D6DF5F6215A040200103098 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				6D6DF5F8215A052800103098 /* ROVC.h */,
+				6D6DF5F9215A052800103098 /* ROVC.m */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		6D6DF5F7215A041E00103098 /* vm */ = {
+			isa = PBXGroup;
+			children = (
+				6D6DF5FE215A070200103098 /* ROVM.h */,
+				6D6DF5FF215A070200103098 /* ROVM.m */,
+			);
+			path = vm;
+			sourceTree = "<group>";
+		};
+		7D56AAA6ADCFC1361901FA13 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C802BE9BA67F665DB3932355 /* Pods-TestModel.debug.xcconfig */,
+				5972FF089305AEB9DB9AE4AA /* Pods-TestModel.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		C927F7E220AD63FD001F5D24 = {
 			isa = PBXGroup;
 			children = (
 				C927F7ED20AD63FE001F5D24 /* TestModel */,
 				C927F7EC20AD63FE001F5D24 /* Products */,
+				7D56AAA6ADCFC1361901FA13 /* Pods */,
+				68709B597475BC8BAA04D509 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,6 +177,7 @@
 		C927F7ED20AD63FE001F5D24 /* TestModel */ = {
 			isa = PBXGroup;
 			children = (
+				6D6DF5F4215A03C800103098 /* ReactiveObjCMVVM */,
 				C9F0ADC420AD7BE2004ADD81 /* VIPER */,
 				C9F0ADC320AD7BD2004ADD81 /* MVVM */,
 				C9F0ADC220AD7BBE004ADD81 /* MVP */,
@@ -296,6 +372,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C927F80120AD63FE001F5D24 /* Build configuration list for PBXNativeTarget "TestModel" */;
 			buildPhases = (
+				D4F580B6922E4B0A2D081BAE /* [CP] Check Pods Manifest.lock */,
 				C927F7E720AD63FE001F5D24 /* Sources */,
 				C927F7E820AD63FE001F5D24 /* Frameworks */,
 				C927F7E920AD63FE001F5D24 /* Resources */,
@@ -355,15 +432,38 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		D4F580B6922E4B0A2D081BAE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TestModel-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C927F7E720AD63FE001F5D24 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				C9F0ADBA20AD6FF2004ADD81 /* MView.m in Sources */,
+				6D6DF5FA215A052800103098 /* ROVC.m in Sources */,
 				C9F0ADBD20AD7148004ADD81 /* MModel.m in Sources */,
 				C968CC6920B25CD900C90EED /* VGreetingPresenter.m in Sources */,
 				C927F7F320AD63FE001F5D24 /* ViewController.m in Sources */,
+				6D6DF600215A070200103098 /* ROVM.m in Sources */,
 				C9F0ADD820AD7F12004ADD81 /* GreetingPresenter.m in Sources */,
 				C968CC6020B258BE00C90EED /* Car.m in Sources */,
 				C927F7FE20AD63FE001F5D24 /* main.m in Sources */,
@@ -374,8 +474,10 @@
 				C9F0ADDB20AD7FE1004ADD81 /* Person.m in Sources */,
 				C968CC6C20B25DD300C90EED /* VGreetingViewVC.m in Sources */,
 				C9F0ADDE20AE75E7004ADD81 /* Animate.m in Sources */,
+				6D6DF5FD215A06A700103098 /* ROModel.m in Sources */,
 				C9F0ADE120AE7776004ADD81 /* GreetingViewModel.m in Sources */,
 				C9F0ADD020AD7CE3004ADD81 /* PVC.m in Sources */,
+				6D6DF603215A071E00103098 /* RORequestManager.m in Sources */,
 				C927F7F020AD63FE001F5D24 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -508,6 +610,7 @@
 		};
 		C927F80220AD63FE001F5D24 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C802BE9BA67F665DB3932355 /* Pods-TestModel.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -522,6 +625,7 @@
 		};
 		C927F80320AD63FE001F5D24 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5972FF089305AEB9DB9AE4AA /* Pods-TestModel.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
