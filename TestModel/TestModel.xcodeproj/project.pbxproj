@@ -610,16 +610,16 @@
 		};
 		C927F80220AD63FE001F5D24 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C802BE9BA67F665DB3932355 /* Pods-TestModel.debug.xcconfig */;
+			baseConfigurationReference = 5972FF089305AEB9DB9AE4AA /* Pods-TestModel.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RSC7NGMXWN;
 				INFOPLIST_FILE = TestModel/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.shinezone.TestModel;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shinezone.TestModel1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -632,9 +632,9 @@
 				DEVELOPMENT_TEAM = RSC7NGMXWN;
 				INFOPLIST_FILE = TestModel/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.shinezone.TestModel;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shinezone.TestModel1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

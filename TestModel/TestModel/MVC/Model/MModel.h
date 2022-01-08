@@ -9,5 +9,9 @@
 #import <Foundation/Foundation.h>
 
 @interface MModel : NSObject
+
 @property(copy,nonatomic) NSString* content;
+
+- (instancetype)initWithContent:(NSString *)content;
+
 @end
